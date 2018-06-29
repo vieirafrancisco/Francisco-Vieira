@@ -2,14 +2,22 @@
     Inverte digitos
 '''
 n = int(input())
-string = str(n)
+length = len(str(n))
+nd = length-1
 
-while(string != '0'):
-    inverso = ''
+inverso = 0
+while(nd >= 0):
+    power = 10**nd
+    v = int(n/power)
+    inverso += v * (10**(length-nd-1))
+    n = n % power
+    nd -= 1
 
-    for i in range(len(string)-1, -1, -1):
-        inverso += '[' + string[i] + ']'
-
+# Se a quantidade de digitos do número for maior
+# que a quantidade de digitos do seu inverso
+if(length > len(str(inverso))):
+    diff = length - len(str(inverso))
+    resultado = diff * "0" + str(inverso)
+    print(resultado)
+else:
     print(inverso)
-    n = int(input())
-    string = str(n)
