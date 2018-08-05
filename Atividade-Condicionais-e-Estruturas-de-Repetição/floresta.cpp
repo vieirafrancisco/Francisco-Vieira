@@ -10,10 +10,10 @@ int main(){
     x = 5;
     y = 3;
 
-    for(int i = 1; i*i <= n/2; i++){
+    for (int i = 1; i * i <= n / 2; i++){
         N = n - x;
-        if(N % y == 0)
-          c++;
+        if (N % y == 0)
+            c++;
         x += 3;
         y += 2;
     }
