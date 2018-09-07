@@ -1,18 +1,21 @@
 #include <cstdio>
 
-long long binary(long long d){
-    if(d == 1)
+int binary(int a){
+    if(a == 1)
         return 1;
-    printf("%lld\n", binary(d/2));
-    return d%2;
+    printf("%d\n", binary(a/2));
+    return a%2;
 }
 
 int main(){
 
-    long long n;
-    scanf("%lld", &n);
+    int n;
+    scanf("%d", &n);
 
-    printf("%lld\n", binary(n));
+    if(n == 0)
+        printf("0\n");
+    else
+        printf("%d\n", binary(n));
 
     return 0;
 }
