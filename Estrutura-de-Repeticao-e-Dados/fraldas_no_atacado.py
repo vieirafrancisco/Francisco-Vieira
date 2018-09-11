@@ -11,7 +11,7 @@ while(True):
         total_fraudas += 6*30
 
     s = input()
-    if(s != 'sim'):
+    if(s.upper() == 'NÃO'):
         break
     
 result = int(round(math.ceil(total_fraudas/100)))
