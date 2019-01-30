@@ -11,4 +11,4 @@ UFAL (Universidade Federal de Alagoas)
 [AB2 - Pygame project](https://github.com/vieirafrancisco/happy-adventure)
 
 ### P2-LP2
-[LP2](https://github.com/vieirafrancisco/Francisco-Vieira/tree/master/p2-lp2/lp2)
+[LP2](https://github.com/vieirafrancisco/Francisco-Vieira/tree/master/lp2)
