@@ -15,10 +15,6 @@ public class IngressoVip extends Ingresso {
 	}
 	
 	public float getValor() {
-		return this.valor+this.valorAdicional;
-	}
-	
-	public void setValor(float valor) {
-		this.valor = valor;
+		return super.getValor()+this.valorAdicional;
 	}
 }

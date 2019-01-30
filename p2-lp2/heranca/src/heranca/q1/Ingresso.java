@@ -2,7 +2,7 @@ package heranca.q1;
 
 public class Ingresso {
 	
-	protected float valor;
+	private float valor;
 	
 	public Ingresso(float valor) {
 		this.valor = valor;
