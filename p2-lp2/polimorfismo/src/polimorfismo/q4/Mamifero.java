@@ -6,13 +6,9 @@ public abstract class Mamifero extends Animal {
 		super(descricao, nome);
 	}
 	
-	public Mamifero(String nome) {
-		super(nome);
-	}
-	
 	@Override
-	public String getNome() {
-		return String.format("%s é um(a) Mamifero", this.nome);
+	public String toString() {
+		return String.format("%s é um mamifero", getNome());
 	}
 	
 }

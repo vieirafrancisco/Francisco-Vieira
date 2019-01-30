@@ -6,12 +6,8 @@ public abstract class Ave extends Animal {
 		super(descricao, nome);
 	}
 	
-	public Ave(String nome) {
-		super(nome);
-	}
-	
 	@Override
-	public String getNome() {
-		return String.format("%s é um(a) Ave", this.nome);
+	public String toString(){
+		return String.format("%s é uma ave", getNome());
 	}
 }
