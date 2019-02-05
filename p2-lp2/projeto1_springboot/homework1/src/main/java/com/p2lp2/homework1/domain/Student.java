@@ -40,7 +40,7 @@ public class Student {
 	@ManyToOne(optional = false)
 	private Cource cource;
 	
-	@ManyToMany(mappedBy="students")
+	@ManyToMany(mappedBy="students", cascade=CascadeType.ALL)
 	private Set<Phone> phones = new HashSet<>();
 	
 	@OneToMany(mappedBy="student", cascade=CascadeType.ALL)
@@ -48,14 +48,11 @@ public class Student {
 	
 	public Student() {}
 
-	public Student(String registration, String cpf, String name, Date birthday, Institution institution, 
-			Cource cource) {
+	public Student(String registration, String cpf, String name, Date birthday) {
 		this.registration = registration;
 		this.cpf = cpf;
 		this.name = name;
 		this.birthday = birthday;
-		this.institution = institution;
-		this.cource = cource;
 	}
 	
 	public int getAge() {
@@ -65,6 +62,10 @@ public class Student {
 
 	public Integer getId() {
 		return this.id;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
 	public Institution getInstitution() {
